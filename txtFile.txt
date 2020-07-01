@@ -1,0 +1,331 @@
+
+Sana@MyPC MINGW64 ~
+$ ssh -i "fai.pem" ec2-user@ec2-18-224-95-162.us-east-2.compute.amazonaws.com
+The authenticity of host 'ec2-18-224-95-162.us-east-2.compute.amazonaws.com (18.224.95.162)' can't be established.
+ECDSA key fingerprint is SHA256:SW63sXK0XMreFdF5MbYd/dJhSjrUJZK8PUyK2/PuO78.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'ec2-18-224-95-162.us-east-2.compute.amazonaws.com,18.224.95.162' (ECDSA) to the list of known hosts.
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+13 package(s) needed for security, out of 22 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-35-195 ~]$ sudo su
+[root@ip-172-31-35-195 ec2-user]# yum install update
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+No package update available.
+Error: Nothing to do
+[root@ip-172-31-35-195 ec2-user]# sudo yum update
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package amazon-linux-extras.noarch 0:1.6.10-1.amzn2 will be updated
+---> Package amazon-linux-extras.noarch 0:1.6.11-1.amzn2 will be an update
+---> Package amazon-linux-extras-yum-plugin.noarch 0:1.6.10-1.amzn2 will be updated
+---> Package amazon-linux-extras-yum-plugin.noarch 0:1.6.11-1.amzn2 will be an update
+---> Package bind-export-libs.x86_64 32:9.11.4-9.P2.amzn2.0.3 will be updated
+---> Package bind-export-libs.x86_64 32:9.11.4-9.P2.amzn2.0.4 will be an update
+---> Package bind-libs.x86_64 32:9.11.4-9.P2.amzn2.0.3 will be updated
+---> Package bind-libs.x86_64 32:9.11.4-9.P2.amzn2.0.4 will be an update
+---> Package bind-libs-lite.x86_64 32:9.11.4-9.P2.amzn2.0.3 will be updated
+---> Package bind-libs-lite.x86_64 32:9.11.4-9.P2.amzn2.0.4 will be an update
+---> Package bind-license.noarch 32:9.11.4-9.P2.amzn2.0.3 will be updated
+---> Package bind-license.noarch 32:9.11.4-9.P2.amzn2.0.4 will be an update
+---> Package bind-utils.x86_64 32:9.11.4-9.P2.amzn2.0.3 will be updated
+---> Package bind-utils.x86_64 32:9.11.4-9.P2.amzn2.0.4 will be an update
+---> Package ca-certificates.noarch 0:2019.2.32-76.amzn2.0.1 will be updated
+---> Package ca-certificates.noarch 0:2019.2.32-76.amzn2.0.2 will be an update
+---> Package cloud-init.noarch 0:19.3-2.amzn2 will be updated
+---> Package cloud-init.noarch 0:19.3-3.amzn2 will be an update
+---> Package json-c.x86_64 0:0.11-4.amzn2.0.3 will be updated
+---> Package json-c.x86_64 0:0.11-4.amzn2.0.4 will be an update
+---> Package kernel.x86_64 0:4.14.181-142.260.amzn2 will be installed
+---> Package microcode_ctl.x86_64 2:2.1-47.amzn2.0.6 will be updated
+---> Package microcode_ctl.x86_64 2:2.1-47.amzn2.0.7 will be an update
+---> Package p11-kit.x86_64 0:0.23.5-3.amzn2.0.2 will be updated
+---> Package p11-kit.x86_64 0:0.23.19-1.amzn2 will be an update
+---> Package p11-kit-trust.x86_64 0:0.23.5-3.amzn2.0.2 will be updated
+---> Package p11-kit-trust.x86_64 0:0.23.19-1.amzn2 will be an update
+---> Package python.x86_64 0:2.7.16-5.amzn2 will be updated
+---> Package python.x86_64 0:2.7.18-1.amzn2 will be an update
+---> Package python-devel.x86_64 0:2.7.16-5.amzn2 will be updated
+---> Package python-devel.x86_64 0:2.7.18-1.amzn2 will be an update
+---> Package python-libs.x86_64 0:2.7.16-5.amzn2 will be updated
+---> Package python-libs.x86_64 0:2.7.18-1.amzn2 will be an update
+---> Package python-urllib3.noarch 0:1.24.3-1.amzn2.0.1 will be updated
+---> Package python-urllib3.noarch 0:1.25.7-1.amzn2.0.1 will be an update
+---> Package rsyslog.x86_64 0:8.24.0-41.amzn2.2.1 will be updated
+---> Package rsyslog.x86_64 0:8.24.0-52.amzn2 will be an update
+---> Package selinux-policy.noarch 0:3.13.1-192.amzn2.6.1 will be updated
+---> Package selinux-policy.noarch 0:3.13.1-192.amzn2.6.3 will be an update
+---> Package selinux-policy-targeted.noarch 0:3.13.1-192.amzn2.6.1 will be updated
+---> Package selinux-policy-targeted.noarch 0:3.13.1-192.amzn2.6.3 will be an update
+---> Package system-release.x86_64 1:2-11.amzn2 will be updated
+---> Package system-release.x86_64 1:2-12.amzn2 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+======================================================================================================================================
+ Package                                     Arch                Version                                Repository               Size
+======================================================================================================================================
+Installing:
+ kernel                                      x86_64              4.14.181-142.260.amzn2                 amzn2-core               21 M
+Updating:
+ amazon-linux-extras                         noarch              1.6.11-1.amzn2                         amzn2-core               36 k
+ amazon-linux-extras-yum-plugin              noarch              1.6.11-1.amzn2                         amzn2-core               10 k
+ bind-export-libs                            x86_64              32:9.11.4-9.P2.amzn2.0.4               amzn2-core              1.1 M
+ bind-libs                                   x86_64              32:9.11.4-9.P2.amzn2.0.4               amzn2-core              155 k
+ bind-libs-lite                              x86_64              32:9.11.4-9.P2.amzn2.0.4               amzn2-core              1.1 M
+ bind-license                                noarch              32:9.11.4-9.P2.amzn2.0.4               amzn2-core               89 k
+ bind-utils                                  x86_64              32:9.11.4-9.P2.amzn2.0.4               amzn2-core              257 k
+ ca-certificates                             noarch              2019.2.32-76.amzn2.0.2                 amzn2-core              397 k
+ cloud-init                                  noarch              19.3-3.amzn2                           amzn2-core              923 k
+ json-c                                      x86_64              0.11-4.amzn2.0.4                       amzn2-core               30 k
+ microcode_ctl                               x86_64              2:2.1-47.amzn2.0.7                     amzn2-core              288 k
+ p11-kit                                     x86_64              0.23.19-1.amzn2                        amzn2-core              268 k
+ p11-kit-trust                               x86_64              0.23.19-1.amzn2                        amzn2-core              131 k
+ python                                      x86_64              2.7.18-1.amzn2                         amzn2-core               92 k
+ python-devel                                x86_64              2.7.18-1.amzn2                         amzn2-core              403 k
+ python-libs                                 x86_64              2.7.18-1.amzn2                         amzn2-core              7.5 M
+ python-urllib3                              noarch              1.25.7-1.amzn2.0.1                     amzn2-core              189 k
+ rsyslog                                     x86_64              8.24.0-52.amzn2                        amzn2-core              617 k
+ selinux-policy                              noarch              3.13.1-192.amzn2.6.3                   amzn2-core              456 k
+ selinux-policy-targeted                     noarch              3.13.1-192.amzn2.6.3                   amzn2-core              6.6 M
+ system-release                              x86_64              1:2-12.amzn2                           amzn2-core               17 k
+
+Transaction Summary
+======================================================================================================================================
+Install   1 Package
+Upgrade  21 Packages
+
+Total download size: 41 M
+Is this ok [y/d/N]: y
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+(1/22): amazon-linux-extras-1.6.11-1.amzn2.noarch.rpm                                                          |  36 kB  00:00:00
+(2/22): amazon-linux-extras-yum-plugin-1.6.11-1.amzn2.noarch.rpm                                               |  10 kB  00:00:00
+(3/22): bind-libs-9.11.4-9.P2.amzn2.0.4.x86_64.rpm                                                             | 155 kB  00:00:00
+(4/22): bind-libs-lite-9.11.4-9.P2.amzn2.0.4.x86_64.rpm                                                        | 1.1 MB  00:00:00
+(5/22): bind-license-9.11.4-9.P2.amzn2.0.4.noarch.rpm                                                          |  89 kB  00:00:00
+(6/22): bind-utils-9.11.4-9.P2.amzn2.0.4.x86_64.rpm                                                            | 257 kB  00:00:00
+(7/22): bind-export-libs-9.11.4-9.P2.amzn2.0.4.x86_64.rpm                                                      | 1.1 MB  00:00:00
+(8/22): cloud-init-19.3-3.amzn2.noarch.rpm                                                                     | 923 kB  00:00:00
+(9/22): json-c-0.11-4.amzn2.0.4.x86_64.rpm                                                                     |  30 kB  00:00:00
+(10/22): ca-certificates-2019.2.32-76.amzn2.0.2.noarch.rpm                                                     | 397 kB  00:00:00
+(11/22): microcode_ctl-2.1-47.amzn2.0.7.x86_64.rpm                                                             | 288 kB  00:00:00
+(12/22): p11-kit-0.23.19-1.amzn2.x86_64.rpm                                                                    | 268 kB  00:00:00
+(13/22): p11-kit-trust-0.23.19-1.amzn2.x86_64.rpm                                                              | 131 kB  00:00:00
+(14/22): python-2.7.18-1.amzn2.x86_64.rpm                                                                      |  92 kB  00:00:00
+(15/22): python-devel-2.7.18-1.amzn2.x86_64.rpm                                                                | 403 kB  00:00:00
+(16/22): python-libs-2.7.18-1.amzn2.x86_64.rpm                                                                 | 7.5 MB  00:00:00
+(17/22): python-urllib3-1.25.7-1.amzn2.0.1.noarch.rpm                                                          | 189 kB  00:00:00
+(18/22): kernel-4.14.181-142.260.amzn2.x86_64.rpm                                                              |  21 MB  00:00:00
+(19/22): rsyslog-8.24.0-52.amzn2.x86_64.rpm                                                                    | 617 kB  00:00:00
+(20/22): selinux-policy-3.13.1-192.amzn2.6.3.noarch.rpm                                                        | 456 kB  00:00:00
+(21/22): system-release-2-12.amzn2.x86_64.rpm                                                                  |  17 kB  00:00:00
+(22/22): selinux-policy-targeted-3.13.1-192.amzn2.6.3.noarch.rpm                                               | 6.6 MB  00:00:00
+--------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                  47 MB/s |  41 MB  00:00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Updating   : p11-kit-0.23.19-1.amzn2.x86_64                                                                                    1/43
+  Updating   : 1:system-release-2-12.amzn2.x86_64                                                                                2/43
+  Updating   : 32:bind-license-9.11.4-9.P2.amzn2.0.4.noarch                                                                      3/43
+  Updating   : 32:bind-libs-lite-9.11.4-9.P2.amzn2.0.4.x86_64                                                                    4/43
+  Updating   : python-libs-2.7.18-1.amzn2.x86_64                                                                                 5/43
+  Updating   : python-2.7.18-1.amzn2.x86_64                                                                                      6/43
+  Updating   : amazon-linux-extras-1.6.11-1.amzn2.noarch                                                                         7/43
+  Updating   : python-devel-2.7.18-1.amzn2.x86_64                                                                                8/43
+  Updating   : 32:bind-libs-9.11.4-9.P2.amzn2.0.4.x86_64                                                                         9/43
+  Updating   : selinux-policy-3.13.1-192.amzn2.6.3.noarch                                                                       10/43
+  Updating   : p11-kit-trust-0.23.19-1.amzn2.x86_64                                                                             11/43
+  Updating   : ca-certificates-2019.2.32-76.amzn2.0.2.noarch                                                                    12/43
+  Updating   : rsyslog-8.24.0-52.amzn2.x86_64                                                                                   13/43
+  Updating   : 2:microcode_ctl-2.1-47.amzn2.0.7.x86_64                                                                          14/43
+  Installing : kernel-4.14.181-142.260.amzn2.x86_64                                                                             15/43
+  Updating   : cloud-init-19.3-3.amzn2.noarch                                                                                   16/43
+  Updating   : python-urllib3-1.25.7-1.amzn2.0.1.noarch                                                                         17/43
+  Updating   : selinux-policy-targeted-3.13.1-192.amzn2.6.3.noarch                                                              18/43
+  Updating   : 32:bind-utils-9.11.4-9.P2.amzn2.0.4.x86_64                                                                       19/43
+  Updating   : amazon-linux-extras-yum-plugin-1.6.11-1.amzn2.noarch                                                             20/43
+  Updating   : json-c-0.11-4.amzn2.0.4.x86_64                                                                                   21/43
+  Updating   : 32:bind-export-libs-9.11.4-9.P2.amzn2.0.4.x86_64                                                                 22/43
+  Cleanup    : cloud-init-19.3-2.amzn2.noarch                                                                                   23/43
+  Cleanup    : python-devel-2.7.16-5.amzn2.x86_64                                                                               24/43
+  Cleanup    : python-urllib3-1.24.3-1.amzn2.0.1.noarch                                                                         25/43
+  Cleanup    : ca-certificates-2019.2.32-76.amzn2.0.1.noarch                                                                    26/43
+  Cleanup    : amazon-linux-extras-yum-plugin-1.6.10-1.amzn2.noarch                                                             27/43
+  Cleanup    : amazon-linux-extras-1.6.10-1.amzn2.noarch                                                                        28/43
+  Cleanup    : selinux-policy-targeted-3.13.1-192.amzn2.6.1.noarch                                                              29/43
+  Cleanup    : 32:bind-utils-9.11.4-9.P2.amzn2.0.3.x86_64                                                                       30/43
+  Cleanup    : 32:bind-libs-9.11.4-9.P2.amzn2.0.3.x86_64                                                                        31/43
+  Cleanup    : 32:bind-libs-lite-9.11.4-9.P2.amzn2.0.3.x86_64                                                                   32/43
+  Cleanup    : python-2.7.16-5.amzn2.x86_64                                                                                     33/43
+  Cleanup    : p11-kit-trust-0.23.5-3.amzn2.0.2.x86_64                                                                          34/43
+  Cleanup    : 32:bind-license-9.11.4-9.P2.amzn2.0.3.noarch                                                                     35/43
+  Cleanup    : selinux-policy-3.13.1-192.amzn2.6.1.noarch                                                                       36/43
+  Cleanup    : 1:system-release-2-11.amzn2.x86_64                                                                               37/43
+  Cleanup    : p11-kit-0.23.5-3.amzn2.0.2.x86_64                                                                                38/43
+  Cleanup    : python-libs-2.7.16-5.amzn2.x86_64                                                                                39/43
+  Cleanup    : rsyslog-8.24.0-41.amzn2.2.1.x86_64                                                                               40/43
+  Cleanup    : json-c-0.11-4.amzn2.0.3.x86_64                                                                                   41/43
+  Cleanup    : 2:microcode_ctl-2.1-47.amzn2.0.6.x86_64                                                                          42/43
+  Cleanup    : 32:bind-export-libs-9.11.4-9.P2.amzn2.0.3.x86_64                                                                 43/43
+  Verifying  : 32:bind-export-libs-9.11.4-9.P2.amzn2.0.4.x86_64                                                                  1/43
+  Verifying  : selinux-policy-targeted-3.13.1-192.amzn2.6.3.noarch                                                               2/43
+  Verifying  : amazon-linux-extras-1.6.11-1.amzn2.noarch                                                                         3/43
+  Verifying  : ca-certificates-2019.2.32-76.amzn2.0.2.noarch                                                                     4/43
+  Verifying  : amazon-linux-extras-yum-plugin-1.6.11-1.amzn2.noarch                                                              5/43
+  Verifying  : 2:microcode_ctl-2.1-47.amzn2.0.7.x86_64                                                                           6/43
+  Verifying  : python-urllib3-1.25.7-1.amzn2.0.1.noarch                                                                          7/43
+  Verifying  : python-devel-2.7.18-1.amzn2.x86_64                                                                                8/43
+  Verifying  : python-libs-2.7.18-1.amzn2.x86_64                                                                                 9/43
+  Verifying  : 32:bind-license-9.11.4-9.P2.amzn2.0.4.noarch                                                                     10/43
+  Verifying  : p11-kit-trust-0.23.19-1.amzn2.x86_64                                                                             11/43
+  Verifying  : json-c-0.11-4.amzn2.0.4.x86_64                                                                                   12/43
+  Verifying  : python-2.7.18-1.amzn2.x86_64                                                                                     13/43
+  Verifying  : 1:system-release-2-12.amzn2.x86_64                                                                               14/43
+  Verifying  : 32:bind-libs-9.11.4-9.P2.amzn2.0.4.x86_64                                                                        15/43
+  Verifying  : selinux-policy-3.13.1-192.amzn2.6.3.noarch                                                                       16/43
+  Verifying  : p11-kit-0.23.19-1.amzn2.x86_64                                                                                   17/43
+  Verifying  : 32:bind-libs-lite-9.11.4-9.P2.amzn2.0.4.x86_64                                                                   18/43
+  Verifying  : 32:bind-utils-9.11.4-9.P2.amzn2.0.4.x86_64                                                                       19/43
+  Verifying  : kernel-4.14.181-142.260.amzn2.x86_64                                                                             20/43
+  Verifying  : rsyslog-8.24.0-52.amzn2.x86_64                                                                                   21/43
+  Verifying  : cloud-init-19.3-3.amzn2.noarch                                                                                   22/43
+  Verifying  : python-devel-2.7.16-5.amzn2.x86_64                                                                               23/43
+  Verifying  : p11-kit-0.23.5-3.amzn2.0.2.x86_64                                                                                24/43
+  Verifying  : python-urllib3-1.24.3-1.amzn2.0.1.noarch                                                                         25/43
+  Verifying  : cloud-init-19.3-2.amzn2.noarch                                                                                   26/43
+  Verifying  : 32:bind-export-libs-9.11.4-9.P2.amzn2.0.3.x86_64                                                                 27/43
+  Verifying  : 32:bind-utils-9.11.4-9.P2.amzn2.0.3.x86_64                                                                       28/43
+  Verifying  : amazon-linux-extras-1.6.10-1.amzn2.noarch                                                                        29/43
+  Verifying  : ca-certificates-2019.2.32-76.amzn2.0.1.noarch                                                                    30/43
+  Verifying  : amazon-linux-extras-yum-plugin-1.6.10-1.amzn2.noarch                                                             31/43
+  Verifying  : python-2.7.16-5.amzn2.x86_64                                                                                     32/43
+  Verifying  : 2:microcode_ctl-2.1-47.amzn2.0.6.x86_64                                                                          33/43
+  Verifying  : 1:system-release-2-11.amzn2.x86_64                                                                               34/43
+  Verifying  : selinux-policy-3.13.1-192.amzn2.6.1.noarch                                                                       35/43
+  Verifying  : 32:bind-libs-lite-9.11.4-9.P2.amzn2.0.3.x86_64                                                                   36/43
+  Verifying  : python-libs-2.7.16-5.amzn2.x86_64                                                                                37/43
+  Verifying  : json-c-0.11-4.amzn2.0.3.x86_64                                                                                   38/43
+  Verifying  : rsyslog-8.24.0-41.amzn2.2.1.x86_64                                                                               39/43
+  Verifying  : p11-kit-trust-0.23.5-3.amzn2.0.2.x86_64                                                                          40/43
+  Verifying  : selinux-policy-targeted-3.13.1-192.amzn2.6.1.noarch                                                              41/43
+  Verifying  : 32:bind-license-9.11.4-9.P2.amzn2.0.3.noarch                                                                     42/43
+  Verifying  : 32:bind-libs-9.11.4-9.P2.amzn2.0.3.x86_64                                                                        43/43
+
+Installed:
+  kernel.x86_64 0:4.14.181-142.260.amzn2
+
+Updated:
+  amazon-linux-extras.noarch 0:1.6.11-1.amzn2                    amazon-linux-extras-yum-plugin.noarch 0:1.6.11-1.amzn2
+  bind-export-libs.x86_64 32:9.11.4-9.P2.amzn2.0.4               bind-libs.x86_64 32:9.11.4-9.P2.amzn2.0.4
+  bind-libs-lite.x86_64 32:9.11.4-9.P2.amzn2.0.4                 bind-license.noarch 32:9.11.4-9.P2.amzn2.0.4
+  bind-utils.x86_64 32:9.11.4-9.P2.amzn2.0.4                     ca-certificates.noarch 0:2019.2.32-76.amzn2.0.2
+  cloud-init.noarch 0:19.3-3.amzn2                               json-c.x86_64 0:0.11-4.amzn2.0.4
+  microcode_ctl.x86_64 2:2.1-47.amzn2.0.7                        p11-kit.x86_64 0:0.23.19-1.amzn2
+  p11-kit-trust.x86_64 0:0.23.19-1.amzn2                         python.x86_64 0:2.7.18-1.amzn2
+  python-devel.x86_64 0:2.7.18-1.amzn2                           python-libs.x86_64 0:2.7.18-1.amzn2
+  python-urllib3.noarch 0:1.25.7-1.amzn2.0.1                     rsyslog.x86_64 0:8.24.0-52.amzn2
+  selinux-policy.noarch 0:3.13.1-192.amzn2.6.3                   selinux-policy-targeted.noarch 0:3.13.1-192.amzn2.6.3
+  system-release.x86_64 1:2-12.amzn2
+
+Complete!
+[root@ip-172-31-35-195 ec2-user]# sudo yum install git
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package git.x86_64 0:2.23.3-1.amzn2.0.1 will be installed
+--> Processing Dependency: perl-Git = 2.23.3-1.amzn2.0.1 for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: git-core-doc = 2.23.3-1.amzn2.0.1 for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: git-core = 2.23.3-1.amzn2.0.1 for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: emacs-filesystem >= 25.3 for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: perl(Term::ReadKey) for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: perl(Git::I18N) for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: perl(Git) for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Processing Dependency: libsecret-1.so.0()(64bit) for package: git-2.23.3-1.amzn2.0.1.x86_64
+--> Running transaction check
+---> Package emacs-filesystem.noarch 1:25.3-3.amzn2.0.1 will be installed
+---> Package git-core.x86_64 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package git-core-doc.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+---> Package libsecret.x86_64 0:0.18.5-2.amzn2.0.2 will be installed
+---> Package perl-Git.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+--> Processing Dependency: perl(Error) for package: perl-Git-2.23.3-1.amzn2.0.1.noarch
+---> Package perl-TermReadKey.x86_64 0:2.30-20.amzn2.0.2 will be installed
+--> Running transaction check
+---> Package perl-Error.noarch 1:0.17020-2.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+======================================================================================================================================
+ Package                            Arch                     Version                               Repository                    Size
+======================================================================================================================================
+Installing:
+ git                                x86_64                   2.23.3-1.amzn2.0.1                    amzn2-core                   135 k
+Installing for dependencies:
+ emacs-filesystem                   noarch                   1:25.3-3.amzn2.0.1                    amzn2-core                    64 k
+ git-core                           x86_64                   2.23.3-1.amzn2.0.1                    amzn2-core                   5.0 M
+ git-core-doc                       noarch                   2.23.3-1.amzn2.0.1                    amzn2-core                   2.4 M
+ libsecret                          x86_64                   0.18.5-2.amzn2.0.2                    amzn2-core                   153 k
+ perl-Error                         noarch                   1:0.17020-2.amzn2                     amzn2-core                    32 k
+ perl-Git                           noarch                   2.23.3-1.amzn2.0.1                    amzn2-core                    47 k
+ perl-TermReadKey                   x86_64                   2.30-20.amzn2.0.2                     amzn2-core                    31 k
+
+Transaction Summary
+======================================================================================================================================
+Install  1 Package (+7 Dependent packages)
+
+Total download size: 7.9 M
+Installed size: 41 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/8): emacs-filesystem-25.3-3.amzn2.0.1.noarch.rpm                                                            |  64 kB  00:00:00
+(2/8): git-2.23.3-1.amzn2.0.1.x86_64.rpm                                                                       | 135 kB  00:00:00
+(3/8): git-core-doc-2.23.3-1.amzn2.0.1.noarch.rpm                                                              | 2.4 MB  00:00:00
+(4/8): git-core-2.23.3-1.amzn2.0.1.x86_64.rpm                                                                  | 5.0 MB  00:00:00
+(5/8): libsecret-0.18.5-2.amzn2.0.2.x86_64.rpm                                                                 | 153 kB  00:00:00
+(6/8): perl-Error-0.17020-2.amzn2.noarch.rpm                                                                   |  32 kB  00:00:00
+(7/8): perl-Git-2.23.3-1.amzn2.0.1.noarch.rpm                                                                  |  47 kB  00:00:00
+(8/8): perl-TermReadKey-2.30-20.amzn2.0.2.x86_64.rpm                                                           |  31 kB  00:00:00
+--------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                  28 MB/s | 7.9 MB  00:00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : git-core-2.23.3-1.amzn2.0.1.x86_64                                                                                 1/8
+  Installing : git-core-doc-2.23.3-1.amzn2.0.1.noarch                                                                             2/8
+  Installing : 1:perl-Error-0.17020-2.amzn2.noarch                                                                                3/8
+  Installing : perl-TermReadKey-2.30-20.amzn2.0.2.x86_64                                                                          4/8
+  Installing : libsecret-0.18.5-2.amzn2.0.2.x86_64                                                                                5/8
+  Installing : 1:emacs-filesystem-25.3-3.amzn2.0.1.noarch                                                                         6/8
+  Installing : perl-Git-2.23.3-1.amzn2.0.1.noarch                                                                                 7/8
+  Installing : git-2.23.3-1.amzn2.0.1.x86_64                                                                                      8/8
+  Verifying  : 1:emacs-filesystem-25.3-3.amzn2.0.1.noarch                                                                         1/8
+  Verifying  : git-2.23.3-1.amzn2.0.1.x86_64                                                                                      2/8
+  Verifying  : libsecret-0.18.5-2.amzn2.0.2.x86_64                                                                                3/8
+  Verifying  : perl-TermReadKey-2.30-20.amzn2.0.2.x86_64                                                                          4/8
+  Verifying  : git-core-2.23.3-1.amzn2.0.1.x86_64                                                                                 5/8
+  Verifying  : 1:perl-Error-0.17020-2.amzn2.noarch                                                                                6/8
+  Verifying  : perl-Git-2.23.3-1.amzn2.0.1.noarch                                                                                 7/8
+  Verifying  : git-core-doc-2.23.3-1.amzn2.0.1.noarch                                                                             8/8
+
+Installed:
+  git.x86_64 0:2.23.3-1.amzn2.0.1
+
+Dependency Installed:
+  emacs-filesystem.noarch 1:25.3-3.amzn2.0.1     git-core.x86_64 0:2.23.3-1.amzn2.0.1    git-core-doc.noarch 0:2.23.3-1.amzn2.0.1
+  libsecret.x86_64 0:0.18.5-2.amzn2.0.2          perl-Error.noarch 1:0.17020-2.amzn2     perl-Git.noarch 0:2.23.3-1.amzn2.0.1
+  perl-TermReadKey.x86_64 0:2.30-20.amzn2.0.2
+
+Complete!
+[root@ip-172-31-35-195 ec2-user]# yum install update
+
